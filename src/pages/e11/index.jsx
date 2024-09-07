@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
 import { useState } from 'react'
+import Cabecalho from '../component/cabecalho';
 
 export default function E11() {
     const [valor, setValor] = useState(0);
@@ -21,18 +22,7 @@ export default function E11() {
 
     return (
         <div className='pagina-e11'>
-            <div className='cabecalho'>
-                <div className='titulo'>
-                    <img src='/logo.png' alt='logo'/>
-                    <h1>
-                        React FreiS
-                    </h1>
-                </div>
-                <div className='links'>
-                    <Link to='/' className='link'>Inicio</Link>
-                    <Link to='/sobre' className='link'>Sobre</Link>
-                </div>
-            </div>
+            <Cabecalho/>
             <div className='exercicio'>
                 <div className='titulo'>
                     <div className='texto'>

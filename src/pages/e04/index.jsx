@@ -4,7 +4,7 @@ import { useState } from 'react'
 import cabecalho from '../component/cabecalho';
 import Cabecalho from '../component/cabecalho';
 
-export default function E01() {
+export default function E04() {
     const [valorPedido, setValorPedido] = useState(0);
     const [valorCupom, setValorCupom] = useState(0);
     const [valorTotal, setValorTotal] = useState(0);
@@ -15,13 +15,13 @@ export default function E01() {
     }
 
     return (
-        <div className='pagina-e01'>
+        <div className='pagina-e04'>
        <Cabecalho/>
             <div className='exercicio'>
                 <div className='titulo'>
                     <div className='texto'>
                         <Link to='/'><img src='/voltar.png' alt='voltar' /></Link>
-                        <h2>Exercício 01 - Cupom de desconto</h2>
+                        <h2>Exercício 04 - Cupom de desconto</h2>
                     </div>
                     <div className='faixa'/>
                 </div>

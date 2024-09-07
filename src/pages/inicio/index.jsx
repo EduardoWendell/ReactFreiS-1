@@ -1,21 +1,12 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
+import cabecalho from '../component/cabecalho'
+import Cabecalho from '../component/cabecalho'
 
 export default function Inicio() {
     return (
         <div className='pagina-inicio'>
-            <div className='cabecalho'>
-                <div className='titulo'>
-                    <img src='/logo.png' alt='logo'/>
-                    <h1>
-                        React FreiS
-                    </h1>
-                </div>
-                <div className='links'>
-                    <Link to='/' className='link'>Inicio</Link>
-                    <Link to='/sobre' className='link'>Sobre</Link>
-                </div>
-            </div>
+     <Cabecalho/>
             <div className='menu'>
                 <div className='titulo'>
                     <h2>Escolha um treino...</h2>
@@ -35,7 +26,20 @@ export default function Inicio() {
                             <h4 className='subtitulo'>Exercício 11</h4>
                         </div>
                     </Link>
-                    <h1>oi</h1>
+                    <Link to='/e02' className='link'>
+                        <div className='card'>
+                            <div className='retangulo verde'/>
+                            <h3 className='titulo'>Converter kg/gramas</h3>
+                            <h4 className='subtitulo'>Exercício 02</h4>
+                        </div>
+                    </Link>
+                    <Link to='/e04' className='link'>
+                        <div className='card'>
+                            <div className='retangulo azul'/>
+                            <h3 className='titulo'>Leitura de livro</h3>
+                            <h4 className='subtitulo'>Exercício 04</h4>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
