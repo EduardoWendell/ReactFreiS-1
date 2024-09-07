@@ -40,6 +40,13 @@ export default function Inicio() {
                             <h4 className='subtitulo'>Exercício 04</h4>
                         </div>
                     </Link>
+                    <Link to='/e05' className='link'>
+                        <div className='card'>
+                            <div className='retangulo roxinho'/>
+                            <h3 className='titulo'>Média de notas</h3>
+                            <h4 className='subtitulo'>Exercício 05</h4>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

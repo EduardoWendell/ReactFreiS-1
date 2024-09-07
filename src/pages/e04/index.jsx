@@ -5,13 +5,14 @@ import cabecalho from '../component/cabecalho';
 import Cabecalho from '../component/cabecalho';
 
 export default function E04() {
-    const [valorPedido, setValorPedido] = useState(0);
-    const [valorCupom, setValorCupom] = useState(0);
-    const [valorTotal, setValorTotal] = useState(0);
+    const [nomelivro, setNomeLivro] = useState(0);
+    const [numeropaginas, setNumeroPaginas] = useState(0);
+    const [segundosleitura, setSegundosLeitura] = useState(0);
+    const [valorfinal,setValorFinal] = useState(0)
 
-    function calcularValorTotal() {
-        let total = valorPedido - valorCupom;
-        setValorTotal(total);
+    function calcularTempo() {
+let calculo = numeropaginas * segundosleitura / 3600
+setValorFinal(calculo)
     }
 
     return (
@@ -21,26 +22,30 @@ export default function E04() {
                 <div className='titulo'>
                     <div className='texto'>
                         <Link to='/'><img src='/voltar.png' alt='voltar' /></Link>
-                        <h2>Exercício 04 - Cupom de desconto</h2>
+                        <h2>Exercício 04 - Leitura de livro</h2>
                     </div>
                     <div className='faixa'/>
                 </div>
                 <div className='descricao'>
-                    <p>Implementar um programa em <b>Javascript</b> para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. <b>O cupom diz quantos reais</b> terá de desconto.</p>
+                    <p>Implementar um programa em   Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em segundos de leitura por página</p>
                 </div>
                 <div className='formulario'>
                     <div className='campos'>
                         <div className='campo'>
-                            <label>Informe o valor do pedido</label>
-                            <input placeholder='0' onChange={e => setValorPedido(e.target.value)} />
+                            <label>Nome do Livro</label>
+                            <input placeholder='0' onChange={e => setNomeLivro(e.target.value)} />
                         </div>
                         <div className='campo'>
-                            <label>Informe o valor do cupom</label>
-                            <input placeholder='0' onChange={e => setValorCupom(e.target.value)} />
+                            <label>Total de páginas</label>
+                            <input placeholder='0' onChange={e => setNumeroPaginas(e.target.value)} />
                         </div>
-                        <button href='#' className='executar' onClick={calcularValorTotal}>Executar</button>
+                        <div className='campo'>
+                            <label>tempo em segundos para leitura</label>
+                            <input placeholder='0' onChange={e => setSegundosLeitura(e.target.value)} />
+                        </div>
+                        <button href='#' className='executar' onClick={calcularTempo}>Executar</button>
                     </div>
-                    <h3 className='resultado'>Resultado: O total é R$ {valorTotal.toFixed(2)}</h3>
+                    <h3 className='resultado'>Você lerá {nomelivro} em {valorfinal.toFixed(2)}</h3>
                 </div>
 
             </div>
