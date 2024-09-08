@@ -25,9 +25,7 @@ export default function E02() {
                     </div>
                     <div className='faixa1'/>
                 </div>
-                <div className='descricao'>
-                    <p>mplementar um programa em Javascript para <b>converter kilos em gramas.</b></p>
-                </div>
+                
                 <div className='formulario'>
                     <div className='campos'>
                         <div className='campo'>

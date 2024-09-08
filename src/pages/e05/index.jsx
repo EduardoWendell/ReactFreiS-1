@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
 import { useState } from 'react'
-import cabecalho from '../component/cabecalho';
+import Cabecalhoexercicio from '../component/cabecalhoexercicio';
 import Cabecalho from '../component/cabecalho';
 
 export default function E05() {
