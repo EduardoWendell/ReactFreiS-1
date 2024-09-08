@@ -47,6 +47,13 @@ export default function Inicio() {
                             <h4 className='subtitulo'>Exercício 05</h4>
                         </div>
                     </Link>
+                    <Link to='/e10' className='link'>
+                        <div className='card'>
+                            <div className='retangulo marrom'/>
+                            <h3 className='titulo'>Calculo imc com histórico</h3>
+                            <h4 className='subtitulo'>Exercício 10</h4>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
